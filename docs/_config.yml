@@ -1,0 +1,32 @@
+# This config file renders the "primer-spec" theme from:
+# https://github.com/eecs485staff/primer-spec
+# This theme is built on the default GitHub Markdown theme "Primer", and
+# optionally renders a sidebar to easily navigate project specs.
+
+title: "Part A Specification"
+favicon: https://eecs281staff.github.io/eecs281.org/assets/images/eecs281favicon.ico
+
+# Build settings
+remote_theme: eecs485staff/primer-spec
+plugins:
+  - jekyll-remote-theme
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-default-layout
+kramdown:
+  input: GFM
+readme_index:
+  remove_originals: true
+  with_frontmatter: true
+
+primerSpec:
+  sitemap:
+    label: ''
+    externalLinks:
+      - title: Part A Explanation Video
+        url: https://youtu.be/O6huRSBuaVE
+      - title: Fast Running Median Video
+        url: https://youtu.be/_T63Cajeyhw
+      - title: EECS 281 YouTube Channel
+        url: https://youtube.com/@EECS281

@@ -1,0 +1,46 @@
+# This is a sample .gitignore file that's useful for EECS 485 projects.
+#
+# Add this file to the root of your git repo.  Name it .gitignore
+#
+# A .gitignore file will tell git which files and directories to ignore and
+# not add to version control.
+
+# Text editors and IDEs
+*~
+*.lock
+*.swp
+.vscode
+.ropeproject/
+.vscode/
+
+# macOS system files
+*.DS_Store
+
+# Google Drive and Dropbox
+Icon
+.dropbox*
+
+# We need Gemfile.lock to make sure local site previews build consistently.
+!Gemfile.lock
+
+# Don't need raw html to be pushed to repo
+_site
+
+
+# Stuff from the old AG
+galaxy
+converter
+*.o
+__jail.out
+diff_tests.sh
+*.tar.gz
+originalprojkit.pyc
+
+# Autograder-generated files.
+benchmarks
+
+# Projkit files
+output
+genoutput.pl
+grade.pl
+register.pl
