@@ -771,9 +771,6 @@ directory" Before you turn in your code, be sure that:
 
 - The Makefile must also have this identifier (in the first TODO block).
 
-- DO NOT copy the above identifier from the PDF! It might contain hidden
-  characters. Copy it from the README file from Canvas instead.
-
 - Your makefile is called `Makefile`. Typing `make -R -r` builds your code
   without errors and generates an executable file called `galaxy`. (The
   command-line options `-R` and `-r` disable automatic build rules; these
