@@ -20,7 +20,7 @@ line flags turned on), as well as -i (just trader info), -m (just median),
 -t (just time traveler), and -v (just verbose)....
 
 Download all files:
-[p2-stocks.tgz](p2-stocks.tgz)
+[p2-stocks-files.tgz](p2-stocks-files.tgz)
 
 ## File listing
 {: .primer-spec-toc-ignore }
