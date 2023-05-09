@@ -640,6 +640,237 @@ A time traveler could not make a profit on Stock 1
 ```
 {: data-title="Full Spec Example Output: p2-stocks/spec-output-all.txt" }
 
+## The `std::priority_queue<>`
+
+The STL `std::priority_queue<>` data structure is an efficient
+implementation of the binary heap which you will code in Part B. To declare a
+`std::priority_queue<>` you need to state either one or three types:
+
+1. The data type to be stored in the container. If this type has a natural
+   sort order that meets your needs, this is the only type required.
+
+2. The underlying container to use, usually just a `vector<>` of the first
+   type.
+
+3. The comparator to use to define what is considered the highest priority
+   element.
+
+If the type that you store in the container has a natural sort order (i.e.
+it supports `operator<()`), the `priority_queue<>` will be a max-heap of
+the declared type. For example, if you just want to store integers, and
+have the largest integer be the highest priority:
+
+``` cpp
+priority_queue<int> pqMax;
+```
+
+When you declare this, by default the underlying storage type is
+`vector<int>` and the default comparator is `less<int>`. If you want the
+smallest integer to be the highest priority:
+
+``` cpp
+priority_queue<int, vector<int>, greater<int>> pqMin;
+```
+
+If you want to store something other than integers, define a custom
+comparator.
+
+### About Comparators
+
+The functor must accept two of whatever is stored in your priority queue:
+if your PQ stores integers, the functor would accept two integers. If your
+PQ stores pointers to units, your functor would accept two pointers to
+orders (actually two const pointers, since you don't have to modify orders
+to compare them).
+
+Your functor receives two parameters, let's call them `a` and `b`. It must
+always answer the following question: is the priority of `a` **less than**
+the priority of b? What does lower priority mean? It depends on your
+application. For example, refer back to
+[Market Logic](#market-logic) if you have multiple sell orders for a stock,
+which order has the highest priority if a buyer arrives? In the same way,
+buy orders have a different way of determining the highest priority. This
+means you will need at least two different functors:
+one for a priority queue containing sell orders and a different functor for a
+priority queue containing buy orders.
+
+## Submitting your solution
+
+### Project Identifier
+
+You MUST include the project identifier at the top of all source and header
+files that you submit:
+
+`// Project Identifier: 0E04A31E0D60C01986ACB20081C9D8722A1899B6`
+
+### Libraries and Restrictions
+
+We highly encourage the use of the STL for part A, with the exception of
+these prohibited features:
+
+- The thread/atomics libraries (e.g., boost, pthreads, etc) which spoil
+  runtime measurements.
+
+- Smart pointers (both unique and shared).
+
+In addition to the above requirements, you may not use any STL facilities
+which trivialize your implementation of your priority queues, including but
+not limited to `priority_queue<>`, `make_heap()`, `push_heap()`,
+`pop_heap()`, `sort_heap()`, `partition()`, `partition_copy()`,
+`stable_partition()`, `partial_sort()`, or `qsort()`. However, you **may**
+(and probably should) use `sort()`. Your main program (Part A) **must** use
+`priority_queue<>`, but your PQ implementations (Part B) **must not**. If
+you are unsure about whether a given function or container may be used, ask
+on Piazza.
+
+### Testing and Debugging
+
+Part of this project is to prepare several test files that expose defects
+in a solution. Each test file is an input file. We will give your test
+files as input to intentionally buggy solutions and compare the output to
+that of a correct project solution. You will receive points depending on
+how many buggy implementations your test files expose. The autograder will
+also tell you if one of your test files exposes bugs in your solution. For
+the first such file that the autograder finds, it will give you the correct
+output and the output of your program.
+
+### Test File Details
+
+**Your test files must be valid Transaction List input files, and may have no
+more than 30 orders** in any one file. You may submit up to 10 test files
+(though it is possible to expose all buggy solutions with fewer test files).
+
+Test files should be named in the following format:
+
+`test-<N>-<OPTION>.txt`
+
+- **`<N>`** is an integer in the range $$[0, 9]$$
+
+- **`<OPTION>`** is one (and only one) of the following characters `v`, `m`,
+  `t`, or `i`.
+
+    - This tells the autograder which command-line option to test with.
+
+For example, `test-0-w.txt` and `test-5-v.txt` are both valid test file
+names.
+
+The tests on which the autograder runs your solution are NOT limited to 30
+deployments in a file; your solution should not impose any size limits (as
+long as memory is available)
+
+### Submitting to the Autograder
+
+Do all of your work (with all needed files, as well as test files) in some
+directory other than your home directory. This will be your "submit
+directory" Before you turn in your code, be sure that:
+
+- Every source code and header file contains the following project
+  identifier in a comment at the top of the file:
+
+  `// Project Identifier: 0E04A31E0D60C01986ACB20081C9D8722A1899B6`
+
+- The Makefile must also have this identifier (in the first TODO block).
+
+- DO NOT copy the above identifier from the PDF! It might contain hidden
+  characters. Copy it from the README file from Canvas instead.
+
+- Your makefile is called `Makefile`. Typing `make -R -r` builds your code
+  without errors and generates an executable file called `galaxy`. (The
+  command-line options `-R` and `-r` disable automatic build rules; these
+  automatic rules do not exist on the autograder).
+
+- Your Makefile specifies that you are compiling with the gcc optimization
+  option `-O3`. This is extremely important for getting all of the
+  performance points, as `-O3` can speed up code by an order of magnitude.
+
+- Your test files are named as described and no other project file names
+  begin with test. Up to 10 test files may be submitted.
+
+- The total size of your program and test files does not exceed 2MB.
+
+- You don't have any unnecessary files (including temporary files created
+  by your text editor and compiler, etc) or subdirectories in your submit
+  directory (e.g., the .git folder used by git source code management).
+
+- Your code compiles and runs correctly using the g++ compiler. This is
+  available on the CAEN Linux systems (that you can access via
+  [login.engin.umich.edu](login.engin.umich.edu). Even if everything seems
+  to work on another operating system or with different versions of GCC,
+  the course staff will not support anything other than GCC running on CAEN
+  Linux.
+
+**For Part A** (stock market simulation), turn in all of the
+following files:
+
+- All your .h(pp) and or .cpp files for the project (NOT including your
+  priority queue implementations)
+- Your Makefile
+- Your test files
+
+**For Part B** (priority queues), turn in all of the following files:
+
+- Your priority queue implementations: SortedPQ.h, BinaryPQ.h, PairingPQ.h
+- Your `Makefile` (actually optional, it includes itself, but we'll replace
+  this with our `Makefile`)
+
+If **any** of your submitted priority queue files do not compile, **no**
+unit testing (Part B) can be performed.
+
+You must prepare a compressed tar archive (.tar.gz file) of all of your
+files to submit to the autograder. One way to do this is to have all of
+your files for submission (and nothing else) in one directory. Our Makefile
+provides the command `make fullsubmit`. Alternately you can go into this
+directory and run this command:
+
+``` console
+dos2unix *; tar -czf ./submit.tar.gz *.cpp *.h *.hpp Makefile test*.txt
+```
+
+This will prepare a suitable file in your working directory.
+
+Submit your project files directly to either of the two autograders at:
+
+[https://g281-1.eecs.umich.edu/](https://g281-1.eecs.umich.edu/) or
+[https://g281-2.eecs.umich.edu/](https://g281-2.eecs.umich.edu/). **When
+the autograders are turned on and accepting submissions, there will be an
+announcement on Piazza.** The autograders are identical and your daily
+submission limit will be shared (and kept track of) between them. You may
+submit up to two times per calendar day, per part (A or B; more per day in
+Spring). If you use a late day to extend one part, the other part is
+automatically extended also. For this purpose, days begin and end at
+midnight (Ann Arbor local time). **We will use your best submission for
+final grading.** If you would instead like us to use your LAST submission,
+see the autograder FAQ page, or
+[use this form](https://docs.google.com/forms/d/e/1FAIpQLSe8BxRNnZKgRI4o-V7eG5F6LY_GhhWjMyJW8yKcP4XKVm2JrQ/viewform?usp=sf_link).
+
+**Please make sure that you read all messages shown at the top section of
+your autograder results! These messages often help explain some of the
+issues you are having (such as losing points for having a bad Makefile or
+why you are segfaulting). Also be sure to check whether the autograder
+shows that one of your own test files exposes a bug in your solution.**
+
+### Grading
+
+- 60 pts total for part A (all your code, using the STL, but not using your
+  priority queues)
+
+    - 45 pts --- correctness & performance
+    -  5 pts --- no memory leaks
+    - 10 pts --- student-provided test files to find bugs in our code (and
+      yours!)
+
+- 40 pts total for part B (our main, your priority queues)
+
+    - 20 pts --- pairing heap correctness & performance
+    -  5 pts --- pairing heap has no memory leaks
+    - 10 pts --- binary heap correctness & performance
+    -  5 pts --- sorted heap correctness & performance
+
+In your autograder output for Part A, the section named "Scoring student
+test files" will tell you how many bugs exist, how many are needed to start
+earning points, earn full points, and earn an extra submit per day (for
+Part A).
+
 ## Part B: Priority Queues
 
 The [Part B Spec](https://eecs281staff.github.io/p2b-priority-queues) is in
