@@ -714,14 +714,14 @@ these prohibited features:
 - Smart pointers (both unique and shared).
 
 In addition to the above requirements, you may not use any STL facilities
-which trivialize your implementation of your priority queues, including but
-not limited to `priority_queue<>`, `make_heap()`, `push_heap()`,
-`pop_heap()`, `sort_heap()`, `partition()`, `partition_copy()`,
-`stable_partition()`, `partial_sort()`, or `qsort()`. However, you **may**
-(and probably should) use `sort()`. Your main program (Part A) **must** use
-`priority_queue<>`, but your PQ implementations (Part B) **must not**. If
-you are unsure about whether a given function or container may be used, ask
-on Piazza.
+which trivialize your implementation of your priority queues in Part B,
+including but not limited to `priority_queue<>`, `make_heap()`,
+`push_heap()`, `pop_heap()`, `sort_heap()`, `partition()`,
+`partition_copy()`, `stable_partition()`, `partial_sort()`, or `qsort()`.
+However, you **may** (and probably should) use `sort()`. Your main program
+(Part A) **must** use `priority_queue<>`, but your PQ implementations (Part
+B) **must not**. If you are unsure about whether a given function or
+container may be used, ask on Piazza.
 
 ### Testing and Debugging
 
