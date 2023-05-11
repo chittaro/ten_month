@@ -250,7 +250,7 @@ opens)
   * e.g. if `<NUM_TRADERS>` is 5, then valid trader IDs are 0, 1, 2, 3, 4
 * `<STOCK_ID>` is in the range `[0, <NUM_STOCKS>)` 
   * ibid.
-* <PRICE> and <QUANTITY> are both positive
+* `<PRICE>` and `<QUANTITY>` are both positive
 
 If you detect an input error at any time during the program, print a helpful
 message to `cerr` and `exit(1)`. You do not need to check for input errors
