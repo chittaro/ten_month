@@ -13,10 +13,10 @@ latex: true
   height="170px"
   />
 
-# EECS 281 - Spring 2023 Project 2: Stock Market Simulation
+# EECS 281 - Project 2A: Stock Market Simulation
 {: .primer-spec-toc-ignore }
 
-***Due Monday, May 22 at 11:59pm***
+***Due Thursday, October 10 at 11:59pm***
 
 <div class="primer-spec-callout warning" markdown="1">
 
