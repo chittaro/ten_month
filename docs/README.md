@@ -16,7 +16,7 @@ latex: true
 # EECS 281 - Project 2A: Stock Market Simulation
 {: .primer-spec-toc-ignore }
 
-***Due Thursday, October 10 at 11:59pm***
+***Due Thursday, October 10, 2024 at 11:59pm***
 
 <div class="primer-spec-callout warning" markdown="1">
 
