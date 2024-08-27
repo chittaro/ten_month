@@ -825,15 +825,11 @@ dos2unix *; tar -czf ./submit.tar.gz *.cpp *.h *.hpp Makefile test*.txt
 
 This will prepare a suitable file in your working directory.
 
-Submit your project files directly to either of the two autograders at:
+Submit your project files directly to the 281 autograder at:
 
-[https://g281-1.eecs.umich.edu/](https://g281-1.eecs.umich.edu/) or
-[https://g281-2.eecs.umich.edu/](https://g281-2.eecs.umich.edu/). **When
-the autograders are turned on and accepting submissions, there will be an
-announcement on Piazza.** The autograders are identical and your daily
-submission limit will be shared (and kept track of) between them. You may
-submit up to two times per calendar day, per part (A or B; more per day in
-Spring). If you use a late day to extend one part, the other part is
+[https://eecs281ag.eecs.umich.edu/](https://eecs281ag.eecs.umich.edu//).  You
+may submit up to two times per calendar day, per part (A or B; more per day
+in Spring). If you use a late day to extend one part, the other part is
 automatically extended also. For this purpose, days begin and end at
 midnight (Ann Arbor local time). **We will use your best submission for
 final grading.** If you would instead like us to use your LAST submission,
