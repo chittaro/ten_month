@@ -34,9 +34,9 @@ this for you.
 
 Don’t spend all your time getting Part A working before thinking about Part
 B. Start reading the Fredman paper to prepare for Pairing Heaps, study and
-understand the [Unordered Priority Queue](p2-stocks/UnorderedPQ.h), and start
-working on the [Sorted Priority Queue](p2-stocks/SortedPQ.h); this one is
+understand the [Unordered Priority Queue](https://eecs281staff.github.io/p2b-priority-queues/p2b-priority-queues/UnorderedPQ.hpp), and start
+working on the [Sorted Priority Queue](https://eecs281staff.github.io/p2b-priority-queues/p2b-priority-queues/SortedPQ.hpp); this one is
 mostly about using the STL, there’s very little actual code to write (the
 best solution is on the order of 5 lines of code added). Lecture 8 (on Heaps)
 is what you need to understand and implement the
-[Binary Priority Queue](p2-stocks/BinaryPQ.h).
+[Binary Priority Queue](https://eecs281staff.github.io/p2b-priority-queues/p2b-priority-queues/BinaryPQ.hpp).
