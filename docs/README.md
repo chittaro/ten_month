@@ -223,8 +223,8 @@ $100/share."_
 
 Each line which describes an order will be well-formatted, meaning that it
 might have invalid values, but not an unreadable format.  For example, there
-will always be a `T` before the `\<TRADER_ID\>`, always be an `S` before the
-\<STOCK_NUM\>, etc. The things you expect to be integers will always be
+will always be a `T` before the `<TRADER_ID>`, always be an `S` before the
+`<STOCK_NUM>`, etc. The things you expect to be integers will always be
 integers (not strings, not floating-point values with a decimal point).
 
 When you want to read a trade, DO NOT `getline()` the entire line, copy it to
@@ -408,9 +408,7 @@ If and only if the `--verbose/-v` option is specified on the command line
 (see [Command Line Interface](#command-line-interface)), whenever a trade is
 completed you should print on a single line:
 
-`Trader **\<BUYING_TRADER_NUM\>** purchased **\<NUM_SHARES\>** shares of Stock
-**\<STOCK_NUM\>** from Trader **\<SELLING_TRADER_NUM\>** for
-$**\<PRICE\>**/share`
+`Trader <BUYING_TRADER_NUM> purchased <NUM_SHARES> shares of Stock <STOCK_NUM> from Trader <SELLING_TRADER_NUM> for $<PRICE>/share`
 
 #### Verbose Output Example
 {: .primer-spec-toc-ignore }
