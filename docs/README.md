@@ -52,7 +52,6 @@ of the priority queue abstract data type.
 
 ## Command Line Interface
 
-TODO
 Your program market should take the following case-sensitive command-line
 options that will determine which types of output to generate. There are no
 arguments required or allowed for any of the output options. Details about
