@@ -748,7 +748,7 @@ Test files should be named in the following format:
 
     - This tells the autograder which command-line option to test with.
 
-For example, `test-0-w.txt` and `test-5-v.txt` are both valid test file
+For example, `test-0-m.txt` and `test-5-v.txt` are both valid test file
 names.
 
 The tests on which the autograder runs your solution are NOT limited to 30
