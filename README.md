@@ -28,7 +28,8 @@ I guess we really do like each other or something (weird and gross)
 ### Project Overview
 
 Before we celebrate this monumental day, there are some tasks you need to address
-in order to unveil your final prize. These tasks require
+in order to unveil your final prize. These tasks require wit, determination, 
+attention to detail, and a certain understanding that only a 
 
 ## Command Line Interface
 
@@ -42,8 +43,21 @@ in order to unveil your final prize. These tasks require
 Nahhhhh jkjk I'm not gonna make you do all that. My amazing multi-talented
 girlfriend already got too much on her plate (you got away with it this time...)
 
-Instead, I wanted to take this time to share 10 things that I have really loved
-about these past 10 months.
+Instead, I wanted to take this time to share 10 things that I have quite
+enjoyed about these past 10 months. 
+
+* Paddle board up north
+* Jumping into ledge
+* Scootering home from pride parade poke bowls
+* Ubering to your house from mine for unspecified reasons..
+* (?) Mutual lab attendance
+* Getting way to drunk at Skeeps for nasty nine
+* Watching TikToks with bloody rufied ava nose
+* 
+
+(ALSO 10 thinks I like about you)
+* Your default dance moves (especially pointer fingies)
+* 
 
 ## Command Line Interface
 
