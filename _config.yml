@@ -24,9 +24,3 @@ primerSpec:
   sitemap:
     label: ''
     externalLinks:
-      - title: Part A Explanation Video
-        url: https://youtu.be/O6huRSBuaVE
-      - title: Fast Running Median Video
-        url: https://youtu.be/_T63Cajeyhw
-      - title: EECS 281 YouTube Channel
-        url: https://youtube.com/@EECS281
