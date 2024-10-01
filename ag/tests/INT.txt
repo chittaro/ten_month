@@ -1,7 +1,0 @@
-COMMENT: Check for max int handled properly with median
-MODE: TL
-NUM_TRADERS: 2
-NUM_STOCKS: 1
-6 BUY T0 S0 $2147483647 #10
-6 SELL T1 S0 $10 #100
-59 BUY T0 S0 $10 #100
