@@ -13,42 +13,37 @@ latex: true
   height="170px"
   />
 
-# EECS 281 - Project 2A: Stock Market Simulation
+# AVA x BELLA 10 month
 {: .primer-spec-toc-ignore }
 
-***Due Friday, October 11, 2024 at 11:59pm***
+***Due Thursday, October 3rd, 2024 at 8:15pm***
 
-<div class="primer-spec-callout warning" markdown="1">
+## Hey Babe
 
-**Important Note:** There are two parts to this project. In your IDE, make
-a separate "IDE Project" for each part. If you try to create a single
-project, you run into a problem of having two copies of `main()`, which
-won't compile, etc.
+Hi cutie. Happy 10 months **<3**. Can you believe it's already been 10?
+I am still baffled. I mean I kinda have been telling people we've been dating
+for 10 months for at least 5 weeks now, but still... likeeeee.. 
+I guess we really do like each other or something (weird and gross)
 
-</div>
+### Project Overview
 
-## Project Overview
-{: .primer-spec-toc-ignore }
+Before we celebrate this monumental day, there are some tasks you need to address
+in order to unveil your final prize. These tasks require
 
-There are **two** parts to Project 2. Part A is an emulation of an electronic
-stock exchange market. Part B requires you to make multiple implementations
-of the priority queue abstract data type.
+## Command Line Interface
 
-### Part A Goals
-{: .primer-spec-toc-ignore }
 
-* Gain experience using a priority queue.
 * Become more proficient with object-oriented design.
 * Become more proficient using the STL, especially `std::priority_queue<>`.
 
-### Part B Goals
+### Wait just kidding
 {: .primer-spec-toc-ignore }
 
-* Implement multiple versions of the priority queue and compare their
-  performances.
-* Learn a data structure (the pairing heap) from a paper. This type of task
-  is something that programmers have to do in their careers.
-* Gain experience writing templated classes and subclasses.
+Nahhhhh jkjk I'm not gonna make you do all that. My amazing multi-talented
+girlfriend already got too much on her plate (you got away with it this time...)
+
+Instead, I wanted to take this time to share 10 things that I have really loved
+about these past 10 months.
 
 ## Command Line Interface
 

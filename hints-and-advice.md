@@ -1,8 +1,8 @@
----
+<!-- ---
 layout: spec
 title: Hints and Advice
 sitemapOrder: 1
----
+--- -->
 
 # Hints and Advice
 {: .primer-spec-toc-ignore }

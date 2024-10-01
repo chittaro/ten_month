@@ -1,8 +1,8 @@
----
+<!-- ---
 layout: spec
 title: Starter and Sample Files
 sitemapOrder: 5
----
+--- -->
 
 # Starter and Sample Files
 {: .primer-spec-toc-ignore }

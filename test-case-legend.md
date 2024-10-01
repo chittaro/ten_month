@@ -1,8 +1,8 @@
----
+<!-- ---
 layout: spec
 title: Test Case Legend
 sitemapOrder: 10
----
+--- -->
 
 # Test Case Legend
 {: .primer-spec-toc-ignore }
